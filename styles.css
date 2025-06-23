@@ -568,15 +568,18 @@ html, body {
 @media (max-width: 768px) {
 
   /* Slideshows */
-.slideshow {
-  width: 100vw;
-  height: auto;
-  max-height: none;
-  aspect-ratio: unset;
-}
-
+  .slideshow {
+    width: 100vw;
+    height: 250px;          
+    max-height: none;
+    aspect-ratio: unset;
+    position: relative;      
+    overflow: hidden;
+  }
 .slide {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
   /* Titles */
   .title {
