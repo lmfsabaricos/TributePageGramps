@@ -82,3 +82,28 @@ counters.forEach(counter => {
 
   observer.observe(counter);
 });
+
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bg-music");
+  if (audio && audio.paused) {
+    audio.play().catch(err => console.log("Autoplay blocked:", err));
+  }
+}, { once: true });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("bg-music");
+  const btn = document.getElementById("music-toggle");
+
+  if (btn && audio) {
+    btn.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = "🔊 Music";
+      } else {
+        audio.pause();
+        btn.textContent = "🔇 Music";
+      }
+    });
+  }
+});
+
