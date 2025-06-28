@@ -16,10 +16,3 @@ Built a personal project which is a tribute page for the one who inspired me dee
 *Added legacy in numbers animation showing his impact and contributions to public service
 
 Did the website after earning my responsive web design certification to fully test what I learned. Will add more features once I learn more JS. 
-
-Planned features: 
-
-*Fully interactive and functional form(Emails sent to our family)
-*Quote slideshow of kind words and memories shared by those whose lives he touched
-*His favorite music as background music (Can turn on/off)
-*Loading animation, more pictures and biography
